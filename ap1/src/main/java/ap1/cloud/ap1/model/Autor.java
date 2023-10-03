@@ -31,7 +31,7 @@ public class Autor {
     private String nacionalidade;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
-    @JoinColumn(name = "autor_id")
+    @JoinColumn(name = "autores_id")
     private List<Livro> livros;
 
     public List<Livro> getLivros() {
