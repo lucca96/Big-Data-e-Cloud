@@ -1,6 +1,5 @@
 package ap1.cloud.ap1.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -17,9 +16,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import ap1.cloud.ap1.model.Livro;
-import ap1.cloud.ap1.model.Autor;
-import ap1.cloud.ap1.repository.LivroRepository;
-import ap1.cloud.ap1.repository.AutorRepository;
 import ap1.cloud.ap1.service.LivroService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 

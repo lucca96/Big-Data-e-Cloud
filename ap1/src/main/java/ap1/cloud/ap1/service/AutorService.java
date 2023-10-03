@@ -4,8 +4,6 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import ap1.cloud.ap1.model.Autor;
@@ -27,7 +25,7 @@ public class AutorService {
 
     public Autor save(Autor autor) throws Exception {
         if (this._autorRepository.countByNome(autor.getNome()) > 0) {
-            throw new Exception("Este ID já existe na base de dados");
+            throw new Exception("Este nome já existe na base de dados");
         }
         this._autorRepository.save(autor);
         return autor;
